@@ -1,0 +1,54 @@
+<!-- Step 1a. Head over to bootstrap.com, click on examples, scroll down and click on the below example i.e Sign-in.
+right click and click on view page source. Select and copy the entire html file and paste inside signup.html right here.... -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+<!-- Step 4. Change the title to newsletter signup -->
+    <title>Newsletter-signup2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+
+  <!-- Bootstrap core CSS -->
+  <!-- Step 2. disable the original css link <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- Go over to https://getbootstrap.com/docs/3.3/getting-started/
+  copy and paste the link below -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <!-- Step 3. click on signin.css within getbootstrap.com copy/paste the entire css and create a styles.css folder
+    Change "signin.css to styles.css -->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+<!-- Step 13. Note that the Form got submitted but didnt trigger any log statement in the server this is becz our Form doesnt have
+any Action (a location to send our post request) specified and so in order to fire a post request to happen we first have to
+specify the Method as post Note that all the information inside Form get posted inside action/method below-->
+  <form action="/" class="form-signin" method="POST">
+  <!-- Step 5. replace the image with any type of your choice -->
+      <img class="mb-4" src="images/PNG Image3.png" alt="" width="72" height="72">
+  <!-- Step 6. Edit and replace "Please sign in, Email address, & Password". So what I actually want are 3 input fields.
+  The first name, last name, and the and the email address because we are signing them up and not signing them in. So I am going
+to delet the labels and the check box and add a new input -->
+    <h1 class="h3 mb-3 font-weight-normal">Signup to my Newsletter!</h1>
+    <!--Delete this <label for="inputEmail" class="sr-only">Email address</label> -->
+    <!-- add the top, middle, and the bottom to the claas respectively -->
+    <!-- Step 12b. all input names replaced by fname, lname, and email -->
+    <input type="text" name="fName"  class="form-control top" placeholder="First Name" required autofocus>
+    <input type="text" name="lName" class="form-control middle" placeholder="Last Name" required>
+    <!--Delete this <label for="inputPassword" class="sr-only">Password</label> -->
+    <input type="Email" name="email" class="form-control bottom" placeholder="Email" required>
+    <!--Delete this <div class="checkbox mb-3"> <label><input type="checkbox" value="remember-me"> Remember me </label></div> -->
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Me Up</button>
+    <p class="mt-5 mb-3 text-muted"><a href="https://kunledaniel.github.io/cv/">@ Kunle Daniel Olajubu</a> 2019 - 2020</p>
+
+    </form>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!-- Step 19. Here we can include some bootstrap code that we give us a nice looking page and we can also include button and allow the user to
+interact with. So from getbootstrap.com website, click on documentation, component,jumbotron, scroll to fluid jumbotron and
+copy/paste jumbotron. please turn over to success.html for step 20-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Failure</title>
+<!-- Step 21. So in order to use Bootstrap, we need Bootstrap stylesheet. So copy/paste here  -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Uh oh!</h1>
+    <p class="lead">There was a problem signing you up. Please try again or contact the developer!</p>
+<!-- step 24. So if the client are unable to signup, it will be nice to have a button they can click to return them back to the original
+page and our form is not going to have a class but our button will get some class i.e btn btn-lg btn-warning.
+(Note that btn-warning is used to turn it yellow -->
+<form action="/failure" method="post">
+  <button class="btn btn-lg btn-warning" type="Submit" name="button">Try Again</button>
+
+</form>
+
+  </div>
+</div>
+
+  </body>
+</html>
